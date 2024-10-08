@@ -20,6 +20,9 @@ const App = () => {
 
       <h1 className={appCss.header}>Task 2. Friends list</h1>
       <FriendList friends={friends} />
+
+      <h1 className={appCss.header}>Task 3. Transaction history</h1>
+      <TransactionHistory items={transactions} />
     </div>
   );
 };

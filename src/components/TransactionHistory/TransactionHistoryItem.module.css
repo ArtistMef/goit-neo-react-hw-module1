@@ -1,0 +1,13 @@
+.row {
+    background-color: #fff;
+}
+
+.row:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.rowItem {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 12px 15px;
+}

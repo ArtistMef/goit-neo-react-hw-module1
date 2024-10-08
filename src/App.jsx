@@ -1,10 +1,10 @@
 import appCss from "./App.module.css";
 import userData from "./userData.json";
 import friends from "./friends.json";
-//import transactions from "./transactions.json";
+import transactions from "./transactions.json";
 import Profile from "./components/Profile/Profile";
 import FriendList from "./components/FriendList/FriendList";
-//import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 
 const App = () => {
   return (
@@ -18,13 +18,13 @@ const App = () => {
         stats={userData.stats}
       />
 
-      <h1 className={appCss.header}>Task 2. Friends list</h1>
+      <h1 className={appCss.header}>Task2 - Friends list</h1>
       <FriendList friends={friends} />
+
+      <h1 className={appCss.header}>Task3 - Transactions</h1>
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
-
-//<h1 className={appCss.header}>Task 3. Transaction history</h1>
-//<TransactionHistory items={transactions} />
 
 export default App;
